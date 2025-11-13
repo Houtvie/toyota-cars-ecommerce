@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View detailed specifications and features of this Toyota vehicle. Contact us for more information and best prices.">
+    <meta name="keywords" content="Toyota details, Toyota specs, buy Toyota Nigeria">
+    
+    <title>Car Details - Toyota Cars Nigeria</title>
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- NAVIGATION HEADER -->
+    <header class="main-header">
+        <nav class="navbar">
+            <!-- Logo/Brand Section -->
+            <div class="nav-brand">
+                <h1>TOYOTA<span class="brand-highlight">CARS</span></h1>
+            </div>
+            
+            <!-- Hamburger Menu Icon for Mobile -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Our Cars</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BREADCRUMB NAVIGATION -->
+    <section class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> / 
+            <a href="cars.html">Our Cars</a> / 
+            <span id="breadcrumbCarName">Car Details</span>
+        </div>
+    </section>
+
+    <!-- CAR DETAILS MAIN SECTION -->
+    <section class="car-details-section">
+        <div class="container">
+            <!-- Loading State -->
+            <div id="loadingState" class="loading-state">
+                <p>Loading vehicle details...</p>
+            </div>
+
+            <!-- Error State (Hidden by default) -->
+            <div id="errorState" class="error-state" style="display: none;">
+                <h2>Vehicle Not Found</h2>
+                <p>Sorry, we couldn't find the vehicle you're looking for.</p>
+                <a href="cars.html" class="btn btn-primary">Back to All Cars</a>
+            </div>
+
+            <!-- Car Details Content (Hidden initially, shown by JavaScript) -->
+            <div id="carDetailsContent" class="car-details-content" style="display: none;">
+                
+                <!-- Image Gallery Section -->
+                <div class="details-image-section">
+                    <!-- Main Large Image -->
+                    <div class="main-image-container">
+                        <img id="mainCarImage" src="" alt="Car Image" class="main-car-image">
+                    </div>
+                    
+                    <!-- Thumbnail Gallery (Optional - for future enhancement) -->
+                    <div class="thumbnail-gallery">
+                        <p class="gallery-note">📸 Multiple angles available at showroom</p>
+                    </div>
+                </div>
+
+                <!-- Car Information Section -->
+                <div class="details-info-section">
+                    <!-- Car Name and Category -->
+                    <div class="car-header">
+                        <h1 id="carDetailName" class="car-detail-title">Car Name</h1>
+                        <span id="carDetailCategory" class="car-detail-category">Category</span>
+                    </div>
+
+                    <!-- Price Display -->
+                    <div class="price-section">
+                        <p class="price-label">Price:</p>
+                        <p id="carDetailPrice" class="car-detail-price">₦0</p>
+                    </div>
+
+                    <!-- Car Description -->
+                    <div class="description-section">
+                        <h3>Description</h3>
+                        <p id="carDetailDescription" class="car-description">
+                            Car description will be loaded here...
+                        </p>
+                    </div>
+
+                    <!-- Key Features -->
+                    <div class="features-section">
+                        <h3>Key Features</h3>
+                        <ul id="carFeaturesList" class="features-list-detail">
+                            <!-- Features will be dynamically inserted here -->
+                        </ul>
+                    </div>
+
+                    <!-- Specifications -->
+                    <div class="specs-section">
+                        <h3>Specifications</h3>
+                        <div id="carSpecsTable" class="specs-table">
+                            <!-- Specifications will be dynamically inserted here -->
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="action-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-large">
+                            📞 Inquire About This Vehicle
+                        </a>
+                        <a href="cars.html" class="btn btn-secondary btn-large">
+                            ← Back to All Cars
+                        </a>
+                    </div>
+
+                    <!-- Additional Info -->
+                    <div class="additional-info">
+                        <div class="info-box">
+                            <span class="info-icon">✓</span>
+                            <span>100% Genuine Toyota</span>
+                        </div>
+                        <div class="info-box">
+                            <span class="info-icon">✓</span>
+                            <span>Warranty Included</span>
+                        </div>
+                        <div class="info-box">
+                            <span class="info-icon">✓</span>
+                            <span>Flexible Payment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIMILAR CARS SECTION -->
+    <section class="similar-cars-section" id="similarCarsSection" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">Similar Vehicles You May Like</h2>
+            <div class="cars-grid" id="similarCarsGrid">
+                <!-- Similar cars will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT CTA SECTION -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Drive Your Dream Car?</h2>
+                <p>Contact us today for more information, test drives, and flexible payment options</p>
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-section">
+                    <h3>TOYOTA<span class="brand-highlight">CARS</span></h3>
+                    <p>Your trusted partner for premium Toyota vehicles in Nigeria.</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cars.html">Our Cars</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📞 +234 800 000 0000</li>
+                        <li>📧 info@toyotacars.ng</li>
+                        <li>📍 Ibadan, Oyo State, Nigeria</li>
+                    </ul>
+                </div>
+                
+                <!-- Business Hours -->
+                <div class="footer-section">
+                    <h4>Business Hours</h4>
+                    <ul>
+                        <li>Mon - Fri: 8:00 AM - 6:00 PM</li>
+                        <li>Saturday: 9:00 AM - 4:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Toyota Cars Nigeria. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to JavaScript files -->
+    <script src="js/cars-data.js"></script>
+    <script src="js/car-details.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

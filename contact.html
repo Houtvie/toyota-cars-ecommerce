@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Toyota Cars Nigeria. Get in touch with us for inquiries, test drives, and vehicle purchases.">
+    <meta name="keywords" content="Contact Toyota Nigeria, Toyota dealer contact, buy Toyota">
+    
+    <title>Contact Us - Toyota Cars Nigeria</title>
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- NAVIGATION HEADER -->
+    <header class="main-header">
+        <nav class="navbar">
+            <!-- Logo/Brand Section -->
+            <div class="nav-brand">
+                <h1>TOYOTA<span class="brand-highlight">CARS</span></h1>
+            </div>
+            
+            <!-- Hamburger Menu Icon for Mobile -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Our Cars</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- PAGE HEADER/BANNER -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1>Get In Touch</h1>
+            <p>We're here to help you find your perfect Toyota vehicle</p>
+        </div>
+    </section>
+
+    <!-- CONTACT INFORMATION SECTION -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-info-grid">
+                
+                <!-- Phone Contact Card -->
+                <div class="contact-info-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Call Us</h3>
+                    <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+                    <p class="contact-detail">+234 800 000 0000</p>
+                    <p class="contact-detail">+234 801 234 5678</p>
+                </div>
+
+                <!-- Email Contact Card -->
+                <div class="contact-info-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email Us</h3>
+                    <p>Send us your inquiries</p>
+                    <p class="contact-detail">info@toyotacars.ng</p>
+                    <p class="contact-detail">sales@toyotacars.ng</p>
+                </div>
+
+                <!-- Location Contact Card -->
+                <div class="contact-info-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Visit Us</h3>
+                    <p>Come see our showroom</p>
+                    <p class="contact-detail">123 Ring Road</p>
+                    <p class="contact-detail">Ibadan, Oyo State, Nigeria</p>
+                </div>
+
+                <!-- Working Hours Card -->
+                <div class="contact-info-card">
+                    <div class="contact-icon">🕒</div>
+                    <h3>Working Hours</h3>
+                    <p class="contact-detail">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                    <p class="contact-detail">Saturday: 9:00 AM - 4:00 PM</p>
+                    <p class="contact-detail">Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM SECTION -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-wrapper">
+                
+                <!-- Form Introduction -->
+                <div class="form-intro">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible. Whether you have questions about our vehicles, need pricing information, or want to schedule a test drive, we're here to help!</p>
+                </div>
+
+                <!-- Contact Form -->
+                <form id="contactForm" class="contact-form">
+                    
+                    <!-- Name Input -->
+                    <div class="form-group">
+                        <label for="fullName">Full Name <span class="required">*</span></label>
+                        <input 
+                            type="text" 
+                            id="fullName" 
+                            name="fullName" 
+                            placeholder="Enter your full name"
+                            required
+                            class="form-input"
+                        >
+                    </div>
+
+                    <!-- Email Input -->
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Enter your email address"
+                            required
+                            class="form-input"
+                        >
+                    </div>
+
+                    <!-- Phone Input -->
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span class="required">*</span></label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            placeholder="e.g., +234 800 000 0000"
+                            required
+                            class="form-input"
+                        >
+                    </div>
+
+                    <!-- Subject/Interest Dropdown -->
+                    <div class="form-group">
+                        <label for="subject">Subject <span class="required">*</span></label>
+                        <select 
+                            id="subject" 
+                            name="subject" 
+                            required
+                            class="form-select"
+                        >
+                            <option value="">-- Select Subject --</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="purchase">Vehicle Purchase</option>
+                            <option value="test-drive">Schedule Test Drive</option>
+                            <option value="financing">Financing Options</option>
+                            <option value="trade-in">Trade-In Inquiry</option>
+                            <option value="service">After-Sales Service</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Interested Vehicle (Optional) -->
+                    <div class="form-group">
+                        <label for="interestedCar">Interested Vehicle (Optional)</label>
+                        <select 
+                            id="interestedCar" 
+                            name="interestedCar"
+                            class="form-select"
+                        >
+                            <option value="">-- Select a Vehicle --</option>
+                            <option value="camry">Toyota Camry</option>
+                            <option value="corolla">Toyota Corolla</option>
+                            <option value="hilux">Toyota Hilux</option>
+                            <option value="rav4">Toyota RAV4</option>
+                            <option value="landcruiser">Toyota Land Cruiser</option>
+                            <option value="prado">Toyota Prado</option>
+                            <option value="avalon">Toyota Avalon</option>
+                            <option value="sienna">Toyota Sienna</option>
+                            <option value="venza">Toyota Venza</option>
+                            <option value="highlander">Toyota Highlander</option>
+                        </select>
+                    </div>
+
+                    <!-- Message Textarea -->
+                    <div class="form-group">
+                        <label for="message">Your Message <span class="required">*</span></label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="6"
+                            placeholder="Tell us more about your inquiry..."
+                            required
+                            class="form-textarea"
+                        ></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-large btn-block">
+                            Send Message
+                        </button>
+                    </div>
+
+                    <!-- Success Message (Hidden by default) -->
+                    <div id="successMessage" class="form-message success-message" style="display: none;">
+                        <p>✓ Thank you! Your message has been sent successfully. We'll get back to you soon.</p>
+                    </div>
+
+                    <!-- Error Message (Hidden by default) -->
+                    <div id="errorMessage" class="form-message error-message" style="display: none;">
+                        <p>✗ Oops! Something went wrong. Please try again.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Find Our Showroom</h2>
+            
+            <!-- Embedded Google Map Placeholder -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.265967085891!2d3.8989!3d7.3775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMjInMzkuMCJOIDPCsDUzJzU2LjAiRQ!5e0!3m2!1sen!2sng!4v1234567890"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    title="Toyota Cars Nigeria Location">
+                </iframe>
+            </div>
+
+            <!-- Map Info Text -->
+            <div class="map-info">
+                <p>📍 Our showroom is conveniently located in Ibadan. Visit us to see our complete range of Toyota vehicles and speak with our experienced sales team.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-section">
+                    <h3>TOYOTA<span class="brand-highlight">CARS</span></h3>
+                    <p>Your trusted partner for premium Toyota vehicles in Nigeria.</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cars.html">Our Cars</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📞 +234 800 000 0000</li>
+                        <li>📧 info@toyotacars.ng</li>
+                        <li>📍 Ibadan, Oyo State, Nigeria</li>
+                    </ul>
+                </div>
+                
+                <!-- Business Hours -->
+                <div class="footer-section">
+                    <h4>Business Hours</h4>
+                    <ul>
+                        <li>Mon - Fri: 8:00 AM - 6:00 PM</li>
+                        <li>Saturday: 9:00 AM - 4:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Toyota Cars Nigeria. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to JavaScript files -->
+    <script src="js/cars-data.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script>
+        // Handle contact form submission
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            const successMessage = document.getElementById('successMessage');
+            const errorMessage = document.getElementById('errorMessage');
+
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault(); // Prevent default form submission
+
+                // Hide any previous messages
+                successMessage.style.display = 'none';
+                errorMessage.style.display = 'none';
+
+                // Get form values
+                const formData = {
+                    fullName: document.getElementById('fullName').value,
+                    email: document.getElementById('email').value,
+                    phone: document.getElementById('phone').value,
+                    subject: document.getElementById('subject').value,
+                    interestedCar: document.getElementById('interestedCar').value,
+                    message: document.getElementById('message').value
+                };
+
+                // Basic validation
+                if (!formData.fullName || !formData.email || !formData.phone || !formData.subject || !formData.message) {
+                    errorMessage.textContent = '✗ Please fill in all required fields.';
+                    errorMessage.style.display = 'block';
+                    return;
+                }
+
+                // Email validation
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(formData.email)) {
+                    errorMessage.textContent = '✗ Please enter a valid email address.';
+                    errorMessage.style.display = 'block';
+                    return;
+                }
+
+                // Simulate form submission (In production, this would send to a server)
+                console.log('Form submitted:', formData);
+
+                // Show success message
+                successMessage.style.display = 'block';
+                
+                // Reset form
+                contactForm.reset();
+
+                // Scroll to success message
+                successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                // Hide success message after 5 seconds
+                setTimeout(function() {
+                    successMessage.style.display = 'none';
+                }, 5000);
+            });
+
+            // Real-time validation feedback (optional enhancement)
+            const emailInput = document.getElementById('email');
+            emailInput.addEventListener('blur', function() {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (this.value && !emailRegex.test(this.value)) {
+                    this.style.borderColor = '#dc143c';
+                } else {
+                    this.style.borderColor = '#ddd';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

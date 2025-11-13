@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our complete collection of Toyota vehicles. Find your perfect car with detailed specifications and prices in Naira.">
+    <meta name="keywords" content="Toyota cars, Toyota inventory, buy Toyota Nigeria, Toyota models">
+    
+    <title>Our Cars - Toyota Cars Nigeria</title>
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- NAVIGATION HEADER -->
+    <header class="main-header">
+        <nav class="navbar">
+            <!-- Logo/Brand Section -->
+            <div class="nav-brand">
+                <h1>TOYOTA<span class="brand-highlight">CARS</span></h1>
+            </div>
+            
+            <!-- Hamburger Menu Icon for Mobile -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html" class="active">Our Cars</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- PAGE HEADER/BANNER -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1>Our Vehicle Collection</h1>
+            <p>Find your perfect Toyota from our extensive inventory</p>
+        </div>
+    </section>
+
+    <!-- FILTERS AND SEARCH SECTION -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters-container">
+                <!-- Search Bar -->
+                <div class="search-box">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        placeholder="Search by car name (e.g., Camry, Hilux)..."
+                        class="search-input"
+                    >
+                    <button class="search-btn" id="searchBtn">
+                        🔍 Search
+                    </button>
+                </div>
+
+                <!-- Price Filter Dropdown -->
+                <div class="filter-group">
+                    <label for="priceFilter">Filter by Price Range:</label>
+                    <select id="priceFilter" class="filter-select">
+                        <option value="all">All Prices</option>
+                        <option value="0-25000000">Under ₦25M</option>
+                        <option value="25000000-40000000">₦25M - ₦40M</option>
+                        <option value="40000000-60000000">₦40M - ₦60M</option>
+                        <option value="60000000-100000000">₦60M - ₦100M</option>
+                        <option value="100000000-999999999">Above ₦100M</option>
+                    </select>
+                </div>
+
+                <!-- Category Filter Dropdown -->
+                <div class="filter-group">
+                    <label for="categoryFilter">Filter by Type:</label>
+                    <select id="categoryFilter" class="filter-select">
+                        <option value="all">All Types</option>
+                        <option value="Sedan">Sedan</option>
+                        <option value="SUV">SUV</option>
+                        <option value="Truck">Truck</option>
+                        <option value="Minivan">Minivan</option>
+                    </select>
+                </div>
+
+                <!-- Reset Filters Button -->
+                <div class="filter-group">
+                    <button class="btn btn-reset" id="resetBtn">Reset Filters</button>
+                </div>
+            </div>
+
+            <!-- Results Count Display -->
+            <div class="results-info">
+                <p id="resultsCount">Showing all vehicles</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARS GRID SECTION -->
+    <section class="cars-catalog-section">
+        <div class="container">
+            <!-- Cars Grid - Will be populated by JavaScript -->
+            <div class="cars-grid" id="allCarsGrid">
+                <!-- Car cards will be dynamically inserted here by JavaScript -->
+                <div class="loading-message">Loading vehicles...</div>
+            </div>
+
+            <!-- No Results Message (Hidden by default) -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <div class="no-results-icon">🚗</div>
+                <h3>No vehicles found</h3>
+                <p>Try adjusting your search or filter criteria</p>
+                <button class="btn btn-primary" id="clearSearch">Clear Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION SECTION -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Can't Find What You're Looking For?</h2>
+                <p>Contact us directly and we'll help you find your perfect Toyota vehicle</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-section">
+                    <h3>TOYOTA<span class="brand-highlight">CARS</span></h3>
+                    <p>Your trusted partner for premium Toyota vehicles in Nigeria.</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cars.html">Our Cars</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📞 +234 800 000 0000</li>
+                        <li>📧 info@toyotacars.ng</li>
+                        <li>📍 Ibadan, Oyo State, Nigeria</li>
+                    </ul>
+                </div>
+                
+                <!-- Business Hours -->
+                <div class="footer-section">
+                    <h4>Business Hours</h4>
+                    <ul>
+                        <li>Mon - Fri: 8:00 AM - 6:00 PM</li>
+                        <li>Saturday: 9:00 AM - 4:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Toyota Cars Nigeria. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to JavaScript files -->
+    <script src="js/cars-data.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Additional JavaScript for cars page functionality -->
+    <script>
+        // This script handles the filtering and search functionality on the cars page
+        
+        // Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            const allCarsGrid = document.getElementById('allCarsGrid');
+            const searchInput = document.getElementById('searchInput');
+            const searchBtn = document.getElementById('searchBtn');
+            const priceFilter = document.getElementById('priceFilter');
+            const categoryFilter = document.getElementById('categoryFilter');
+            const resetBtn = document.getElementById('resetBtn');
+            const resultsCount = document.getElementById('resultsCount');
+            const noResults = document.getElementById('noResults');
+            const clearSearch = document.getElementById('clearSearch');
+
+            // Display all cars on page load
+            displayAllCars();
+
+            // Function to display all cars
+            function displayAllCars() {
+                allCarsGrid.innerHTML = ''; // Clear loading message
+                
+                if (typeof carsData === 'undefined' || carsData.length === 0) {
+                    allCarsGrid.innerHTML = '<p class="error-message">Unable to load vehicles. Please refresh the page.</p>';
+                    return;
+                }
+
+                carsData.forEach(car => {
+                    const carCard = createCarCard(car);
+                    allCarsGrid.appendChild(carCard);
+                });
+
+                updateResultsCount(carsData.length);
+            }
+
+            // Function to create a car card element
+            function createCarCard(car) {
+                const card = document.createElement('div');
+                card.className = 'car-card';
+                
+                card.innerHTML = `
+                    <div class="car-image">
+                        <img src="${car.image}" alt="${car.name}" onerror="this.src='images/placeholder-car.jpg'">
+                        ${car.featured ? '<span class="featured-badge">Featured</span>' : ''}
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">${car.name}</h3>
+                        <p class="car-category">${car.category}</p>
+                        <p class="car-price">₦${car.price.toLocaleString()}</p>
+                        <a href="car-details.html?id=${car.id}" class="btn btn-small">View Details</a>
+                    </div>
+                `;
+                
+                return card;
+            }
+
+            // Search functionality
+            function performSearch() {
+                const searchTerm = searchInput.value.toLowerCase().trim();
+                const priceRange = priceFilter.value;
+                const category = categoryFilter.value;
+
+                let filteredCars = carsData;
+
+                // Filter by search term
+                if (searchTerm) {
+                    filteredCars = filteredCars.filter(car => 
+                        car.name.toLowerCase().includes(searchTerm) ||
+                        car.category.toLowerCase().includes(searchTerm)
+                    );
+                }
+
+                // Filter by price range
+                if (priceRange !== 'all') {
+                    const [minPrice, maxPrice] = priceRange.split('-').map(Number);
+                    filteredCars = filteredCars.filter(car => 
+                        car.price >= minPrice && car.price <= maxPrice
+                    );
+                }
+
+                // Filter by category
+                if (category !== 'all') {
+                    filteredCars = filteredCars.filter(car => car.category === category);
+                }
+
+                // Display filtered results
+                displayFilteredCars(filteredCars);
+            }
+
+            // Function to display filtered cars
+            function displayFilteredCars(cars) {
+                allCarsGrid.innerHTML = '';
+
+                if (cars.length === 0) {
+                    noResults.style.display = 'block';
+                    allCarsGrid.style.display = 'none';
+                    updateResultsCount(0);
+                } else {
+                    noResults.style.display = 'none';
+                    allCarsGrid.style.display = 'grid';
+                    
+                    cars.forEach(car => {
+                        const carCard = createCarCard(car);
+                        allCarsGrid.appendChild(carCard);
+                    });
+
+                    updateResultsCount(cars.length);
+                }
+            }
+
+            // Update results count display
+            function updateResultsCount(count) {
+                if (count === carsData.length) {
+                    resultsCount.textContent = `Showing all ${count} vehicles`;
+                } else {
+                    resultsCount.textContent = `Showing ${count} of ${carsData.length} vehicles`;
+                }
+            }
+
+            // Reset all filters
+            function resetFilters() {
+                searchInput.value = '';
+                priceFilter.value = 'all';
+                categoryFilter.value = 'all';
+                noResults.style.display = 'none';
+                allCarsGrid.style.display = 'grid';
+                displayAllCars();
+            }
+
+            // Event listeners
+            searchBtn.addEventListener('click', performSearch);
+            searchInput.addEventListener('keyup', function(e) {
+                if (e.key === 'Enter') {
+                    performSearch();
+                }
+            });
+            priceFilter.addEventListener('change', performSearch);
+            categoryFilter.addEventListener('change', performSearch);
+            resetBtn.addEventListener('click', resetFilters);
+            clearSearch.addEventListener('click', resetFilters);
+        });
+    </script>
+</body>
+</html>
