@@ -11,7 +11,7 @@ const carsData = [
         name: "Toyota Camry 2024",
         category: "Sedan",
         price: 35000000, // ₦35,000,000
-        image: "images/cars/camry.jpg",
+        image: "images/camry.jfif",
         featured: true,
         description: "The Toyota Camry represents the perfect blend of luxury, performance, and reliability. This elegant sedan features a spacious interior, advanced safety features, and exceptional fuel efficiency. Ideal for executives and families who value comfort and style.",
         features: [
@@ -41,7 +41,7 @@ const carsData = [
         name: "Toyota Corolla 2024",
         category: "Sedan",
         price: 25000000, // ₦25,000,000
-        image: "images/cars/corolla.jpg",
+        image: "images/corolla.jfif",
         featured: true,
         description: "The world's best-selling car, the Toyota Corolla offers unmatched reliability and value. With its sleek design, comfortable ride, and excellent fuel economy, the Corolla is perfect for daily commuting and long-distance travel.",
         features: [
@@ -71,7 +71,7 @@ const carsData = [
         name: "Toyota Hilux 2024",
         category: "Truck",
         price: 50000000, // ₦50,000,000
-        image: "images/cars/hilux.jpg",
+        image: "images/hilux.jfif",
         featured: true,
         description: "The legendary Toyota Hilux is built for the toughest terrains. This rugged pickup truck combines exceptional durability with modern comfort, making it ideal for both work and adventure. Known for its indestructible reliability.",
         features: [
@@ -101,7 +101,7 @@ const carsData = [
         name: "Toyota RAV4 2024",
         category: "SUV",
         price: 42000000, // ₦42,000,000
-        image: "images/cars/rav4.jpg",
+        image: "images/rav4.jfif",
         featured: true,
         description: "The Toyota RAV4 is a versatile compact SUV that excels in both city driving and off-road adventures. With its spacious interior, advanced safety features, and powerful performance, the RAV4 is perfect for modern families.",
         features: [
@@ -131,7 +131,7 @@ const carsData = [
         name: "Toyota Land Cruiser 2024",
         category: "SUV",
         price: 110000000, // ₦110,000,000
-        image: "images/cars/landcruiser.jpg",
+        image: "images/land-cruiser.jfif",
         featured: true,
         description: "The ultimate luxury SUV, the Toyota Land Cruiser is an icon of off-road capability and premium comfort. With its powerful V8 engine and unmatched reliability, the Land Cruiser is built for those who accept no compromise.",
         features: [
@@ -161,7 +161,7 @@ const carsData = [
         name: "Toyota Prado 2024",
         category: "SUV",
         price: 67500000, // ₦67,500,000
-        image: "images/cars/prado.jpg",
+        image: "images/prado.jfif",
         featured: true,
         description: "The Toyota Prado offers premium SUV luxury with outstanding off-road capability. Perfect for families who need space, comfort, and the confidence to tackle any terrain. A status symbol with substance.",
         features: [
@@ -191,7 +191,7 @@ const carsData = [
         name: "Toyota Avalon 2024",
         category: "Sedan",
         price: 38000000, // ₦38,000,000
-        image: "images/cars/avalon.jpg",
+        image: "images/avalon.jfif",
         featured: false,
         description: "The Toyota Avalon is the flagship sedan that delivers executive-level luxury and refinement. With its spacious cabin, smooth ride, and advanced technology, the Avalon is designed for those who demand the very best.",
         features: [
@@ -221,7 +221,7 @@ const carsData = [
         name: "Toyota Sienna 2024",
         category: "Minivan",
         price: 46000000, // ₦46,000,000
-        image: "images/cars/sienna.jpg",
+        image: "images/sienna.jfif",
         featured: false,
         description: "The Toyota Sienna is the perfect family minivan with seating for up to 8 passengers. Combining comfort, versatility, and advanced safety features, the Sienna makes every family trip enjoyable and stress-free.",
         features: [
@@ -251,7 +251,7 @@ const carsData = [
         name: "Toyota Venza 2024",
         category: "SUV",
         price: 43500000, // ₦43,500,000
-        image: "images/cars/venza.jpg",
+        image: "images/venza.jfif",
         featured: false,
         description: "The Toyota Venza is a sophisticated midsize SUV that combines elegant styling with hybrid efficiency. Perfect for those who want a premium SUV experience with excellent fuel economy and modern technology.",
         features: [
@@ -281,7 +281,7 @@ const carsData = [
         name: "Toyota Highlander 2024",
         category: "SUV",
         price: 55000000, // ₦55,000,000
-        image: "images/cars/highlander.jpg",
+        image: "images/highlander.jfif",
         featured: false,
         description: "The Toyota Highlander is a premium three-row SUV that offers space, comfort, and capability for large families. With its refined interior and powerful performance, the Highlander delivers a first-class driving experience.",
         features: [

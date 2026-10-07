@@ -226,14 +226,14 @@
                 
                 card.innerHTML = `
                     <div class="car-image">
-                        <img src="${car.image}" alt="${car.name}" onerror="this.src='images/placeholder-car.jpg'">
+                        <img src="${car.image}" alt="${car.name}" onerror="this.onerror=null;this.src='images/placeholder-car.svg'">
                         ${car.featured ? '<span class="featured-badge">Featured</span>' : ''}
                     </div>
                     <div class="car-info">
                         <h3 class="car-name">${car.name}</h3>
                         <p class="car-category">${car.category}</p>
                         <p class="car-price">₦${car.price.toLocaleString()}</p>
-                        <a href="car-details.html?id=${car.id}" class="btn btn-small">View Details</a>
+                        <a href="cars-details.html?id=${car.id}" class="btn btn-small">View Details</a>
                     </div>
                 `;
                 
